@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>concurrency</title>
+    <link rel="stylesheet"
+    href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css
+    />
+  </head>
+  <body class="container bg-warning-subtle text-warning-emphasis">
+    <h1 class="text-center text-danger my-5"><i>Currency Converter</i></h1>
+    <main
+      class="container bg-primary-subtle text-primary-emphasis w-25 p-3 border border-black"
+      style="border-radius: 15px"
+    >
+      <form method="post">
+        <div class="mb-3">
+          <label for="in-countries" class="form-label">From Currency</label>
+          <select id="in-countries" class="form-select border-success">
+            <option selected>Select currency</option>
+          </select>
+        </div>
+        <div class="mb-5">
+          <label for="in-amount" class="form-label">Amount</label>
+          <input
+            type="number"
+            class="form-control border-success"
+            id="in-amount"
+            placeholder="1"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="out-countries" class="form-label">To Currency</label>
+          <select id="out-countries" class="form-select border-success">
+            <option selected>Select currency</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="out-amount" class="form-label">Converted Amount</label>
+          <input
+            type="number"
+            class="form-control border-success"
+            id="out-amount"
+            placeholder="Enter amount"
+          />
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary">
+            Convert Currency
+          </button>
+        </div>
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
